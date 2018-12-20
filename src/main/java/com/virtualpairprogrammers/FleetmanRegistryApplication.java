@@ -28,8 +28,8 @@ public class FleetmanRegistryApplication {
 	@Bean
 	public EurekaInstanceConfigBean eurekaInstanceConfigBean(InetUtils utils) {
 
-The following is needed if running on Spring Cloud prior to the "Dalston" release train.
-See the VirtualPairprogrammer.com Video for details
+// The following is needed if running on Spring Cloud prior to the "Dalston" release train.
+// See the VirtualPairprogrammer.com Video for details
 		final EurekaInstanceConfigBean instance = new EurekaInstanceConfigBean(utils)
 	{
 		@Scheduled(initialDelay = 30000L, fixedRate = 30000L)
